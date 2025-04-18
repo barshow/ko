@@ -18,9 +18,9 @@ import (
 	"context"
 	"fmt"
 
+	"github.com/barshow/ko/pkg/build"
+	"github.com/barshow/ko/pkg/publish"
 	"github.com/google/go-containerregistry/pkg/name"
-	"github.com/google/ko/pkg/build"
-	"github.com/google/ko/pkg/publish"
 )
 
 // PublishImages publishes images

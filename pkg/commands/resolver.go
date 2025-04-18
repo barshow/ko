@@ -30,10 +30,10 @@ import (
 	"gopkg.in/yaml.v3"
 	"k8s.io/apimachinery/pkg/labels"
 
-	"github.com/google/ko/pkg/build"
-	"github.com/google/ko/pkg/commands/options"
-	"github.com/google/ko/pkg/publish"
-	"github.com/google/ko/pkg/resolve"
+	"github.com/barshow/ko/pkg/build"
+	"github.com/barshow/ko/pkg/commands/options"
+	"github.com/barshow/ko/pkg/publish"
+	"github.com/barshow/ko/pkg/resolve"
 )
 
 // ua returns the ko user agent.
