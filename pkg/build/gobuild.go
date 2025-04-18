@@ -841,7 +841,9 @@ func createTemplateData(ctx context.Context, buildCtx buildContext) (map[string]
 	// Get the git information, if available.
 	info, err := git.GetInfo(ctx, buildCtx.dir)
 	if err != nil {
-		log.Printf("%v", err)
+		if !errors.Is(err, git.ErrNoTag) {
+			log.Printf("%v", err)
+		}
 	}
 
 	// Use the creation time as the build date, if provided.
