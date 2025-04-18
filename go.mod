@@ -1,4 +1,4 @@
-module github.com/google/ko
+module github.com/barshow/ko
 
 go 1.24.0
 
